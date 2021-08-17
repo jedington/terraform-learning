@@ -1,12 +1,12 @@
 resource "aws_instance" "Webserver" {
-    ami                     = "${var.ami}"
-    instance_type           = "${var.instance_type}"
-    key_name                = "terraform"
-    vpc_security_group_ids  = ["${aws_security_group.webserver_sg.id}"]
-    tags                    = {
-        Name = "Webserver"
-    }
-    user_data               = <<EOF
+  ami                    = var.ami
+  instance_type          = var.instance_type
+  key_name               = "terraform"
+  vpc_security_group_ids = ["${aws_security_group.webserver_sg.id}"]
+  tags = {
+    Name = "Webserver"
+  }
+  user_data = <<EOF
         #!/bin/bash -xe
         exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
         /usr/bin/apt-get update

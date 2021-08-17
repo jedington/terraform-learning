@@ -3,5 +3,5 @@ variable "region" {
 
 }
 variable "vpc_id" {
-default = "vpc-cd8735b7"
+  default = "vpc-cd8735b7"
 }

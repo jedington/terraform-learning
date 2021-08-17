@@ -3,13 +3,17 @@ resource "aws_security_group" "webserver_sg" {
     from_port   = var.http_port
     to_port     = var.http_port
     protocol    = "tcp"
-    cidr_blocks = ["${var.my_system}"]
+    cidr_blocks = ["${local.ifconfig_co_json.ip}/32"]
+    #  # alt option - hard coded local system
+    #- cidr_blocks = ["${var.my_system}"]
   }
   ingress {
     from_port   = var.ssh_port
     to_port     = var.ssh_port
     protocol    = "tcp"
-    cidr_blocks = ["${var.my_system}"]
+    cidr_blocks = ["${local.ifconfig_co_json.ip}/32"]
+    #  # alt option - hard coded local system
+    #- cidr_blocks = ["${var.my_system}"]
   }
   egress {
     from_port   = 0

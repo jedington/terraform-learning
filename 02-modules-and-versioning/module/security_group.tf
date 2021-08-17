@@ -8,7 +8,9 @@ resource "aws_security_group_rule" "allow_http" {
   from_port         = var.http_port
   to_port           = var.http_port
   protocol          = "tcp"
-  cidr_blocks       = [var.my_system]
+  cidr_blocks = ["${local.ifconfig_co_json.ip}/32"]
+  #  # alt option - hard coded local system
+  #- cidr_blocks = ["${var.my_system}"]
 }
 resource "aws_security_group_rule" "allow_ssh" {
   type              = "ingress"
@@ -16,7 +18,9 @@ resource "aws_security_group_rule" "allow_ssh" {
   from_port         = var.ssh_port
   to_port           = var.ssh_port
   protocol          = "tcp"
-  cidr_blocks       = [var.my_system]
+  cidr_blocks = ["${local.ifconfig_co_json.ip}/32"]
+  #  # alt option - hard coded local system
+  #- cidr_blocks = ["${var.my_system}"]
 }
 resource "aws_security_group_rule" "allow_outgoing" {
   type              = "egress"
@@ -27,23 +31,23 @@ resource "aws_security_group_rule" "allow_outgoing" {
   cidr_blocks       = ["0.0.0.0/0"]
 }
 #     ingress {
-#         from_port = "${var.http_port}"
-#         to_port = "${var.http_port}"
-#         protocol = "tcp"
-#         cidr_blocks = [ "${var.my_system}"]
+#       from_port = "${var.http_port}"
+#       to_port = "${var.http_port}"
+#       protocol = "tcp"
+#       cidr_blocks = [ "${var.my_system}"]
 #     }
 
-#      ingress {
-#         from_port = "${var.ssh_port}"
-#         to_port = "${var.ssh_port}"
-#         protocol = "tcp"
-#         cidr_blocks = [ "${var.my_system}"]
+#     ingress {
+#       from_port = "${var.ssh_port}"
+#       to_port = "${var.ssh_port}"
+#       protocol = "tcp"
+#       cidr_blocks = [ "${var.my_system}"]
 #     }
-#    egress {
-#     from_port       = 0
-#     to_port         = 0
-#     protocol        = "-1"
-#     cidr_blocks     = ["0.0.0.0/0"]
-#   } 
+#     egress {
+#       from_port       = 0
+#       to_port         = 0
+#       protocol        = "-1"
+#       cidr_blocks     = ["0.0.0.0/0"]
+#     } 
 
 # } 

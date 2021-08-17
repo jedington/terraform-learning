@@ -3,13 +3,13 @@ resource "aws_security_group" "webserver_sg" {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
-    cidr_blocks = ["76.185.192.60/32"]
+    cidr_blocks = ["${local.ifconfig_co_json.ip}/32"]
   }
   ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["76.185.192.60/32"]
+    cidr_blocks = ["${local.ifconfig_co_json.ip}/32"]
   }
   egress {
     from_port   = 0

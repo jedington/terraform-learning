@@ -1,5 +1,5 @@
 resource "aws_launch_configuration" "my_first_lc" {
-  image_id        = var.ami
+  image_id        = ["${var.ami["us-east-1"]}"]
   instance_type   = var.instance_type
   key_name        = "terraform"
   security_groups = ["${aws_security_group.webserver_sg.id}"]

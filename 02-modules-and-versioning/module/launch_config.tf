@@ -1,6 +1,6 @@
 resource "aws_launch_configuration" "my-first-launch-conf" {
   name            = "${var.cluster}-webserver-launch"
-  image_id        = var.ami
+  image_id        = ["${var.ami["us-east-1"]}"]
   instance_type   = var.instance_type
   security_groups = [aws_security_group.webserver_sg.id]
   key_name        = "terraform"

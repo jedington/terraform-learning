@@ -1,3 +1,5 @@
+# Keep in mind that remote access to virtual machine(s) is only
+# ...viable from the host that used terraform to bring them up.
 resource "aws_security_group" "webserver_sg" {
   ingress {
     from_port   = var.http_port

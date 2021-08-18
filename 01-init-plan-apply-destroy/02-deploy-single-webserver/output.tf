@@ -1,5 +1,5 @@
-output "DNS_name_elb" {
-  value = ["${aws_elb.my_first_elb.dns_name}"]
+output "public_ip" {
+  value = ["${aws_instance.Webserver.*.public_ip}"]
 }
 
 # use this or self hosted option: https://github.com/mpolden/echoip

@@ -10,6 +10,9 @@ Setup AWS CLI (after AWS CLI is installed--use commands w/in native CLI, Git Bas
 1. aws configure set region [your_region_name]
 2. aws ec2 create-key-pair --key-name [your_key_name]
 
+[Optional] Terraform Getting Started (Terraform basics and Terraform Cloud)
+- git clone https://github.com/hashicorp/tfc-getting-started.git
+
 ref 1 - https://github.com/cloudiac18/ultimate-terraform-course-for-devops
 For...
   * https://github.com/jedington/terraform-learning/tree/master/01-init-plan-apply-destroy

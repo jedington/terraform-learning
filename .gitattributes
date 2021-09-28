@@ -1,0 +1,27 @@
+###############################################################################
+# Set default behavior to automatically normalize line endings.
+###############################################################################
+* text=auto
+
+# Linguist overrides
+*.yml linguist-detectable=true
+*.yml linguist-language=YAML
+*.yml linguist-documentation=false
+
+*.json linguist-detectable=true
+*.json linguist-language=JSON
+*.json linguist-documentation=false
+
+Vagrantfile linguist-detectable=true
+Vagrantfile linguist-language=Ruby
+Vagrantfile linguist-documentation=false
+
+Jenkinsfile linguist-detectable=true
+Jenkinsfile linguist-language=Groovy
+Jenkinsfile linguist-documentation=false
+
+#- *.md linguist-language=Markdown
+#- *.md linguist-documentation=false
+#- *.md linguist-detectable=true
+#- README.md linguist-detectable=false
+#- readme.md linguist-detectable=false

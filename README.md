@@ -20,6 +20,8 @@ Setup AWS CLI (after AWS CLI is installed--use commands w/in native CLI, Git Bas
 1. aws configure set region [your_region_name]
 2. aws ec2 create-key-pair --key-name [your_key_name]
 
+[NOTE] Keep in mind that .tfvars files can contain sensitive data, such as passwords, private/secret keys, etc. The files provided in this repo are for **learning purposes only**. This should not be a practice done in live/production environments. Also, when making your own repos, make sure to uncomment/add `*.tfvars` in the .gitignore file.
+
 [Optional] Terraform Getting Started (Terraform basics and Terraform Cloud)
 - git clone https://github.com/hashicorp/tfc-getting-started.git
 

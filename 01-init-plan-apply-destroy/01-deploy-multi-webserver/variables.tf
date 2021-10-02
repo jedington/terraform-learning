@@ -18,6 +18,3 @@ variable "ami" {
 variable "instance_type" {
   default = "t2.micro"
 }
-variable "availability_zones" {
-  default = ["us-east-1a", "us-east-1b", "us-east-1c"]
-}

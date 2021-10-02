@@ -6,19 +6,15 @@
 # Linguist overrides
 *.yml linguist-detectable=true
 *.yml linguist-language=YAML
-*.yml linguist-documentation=false
 
 *.json linguist-detectable=true
 *.json linguist-language=JSON
-*.json linguist-documentation=false
 
-Vagrantfile* linguist-detectable=true
-Vagrantfile* linguist-language=Ruby
-Vagrantfile* linguist-documentation=false
+Vagrantfile linguist-detectable=true
+Vagrantfile linguist-language=Ruby
 
-Jenkinsfile* linguist-detectable=true
-Jenkinsfile* linguist-language=Groovy
-Jenkinsfile* linguist-documentation=false
+Jenkinsfile linguist-detectable=true
+Jenkinsfile linguist-language=Groovy
 
 *.tfvars linguist-detectable=false
 

@@ -1,17 +1,18 @@
-# Keep in mind that remote access to virtual machine(s) is only
-# ...viable from the host that used terraform to bring them up.
-resource "aws_security_group" "webserver_sg" {
+resource "aws_security_group" "allow_login" {
+  description = "Allow  inbound traffic"
   ingress {
-    from_port   = var.http_port
-    to_port     = var.http_port
+    description = "allow ssh to system"
+    from_port   = var.ssh_port
+    to_port     = var.ssh_port
     protocol    = "tcp"
     cidr_blocks = ["${local.ifconfig_co_json.ip}/32"]
     #  # alt option - hard coded local system
     #- cidr_blocks = ["${var.my_system}"]
   }
   ingress {
-    from_port   = var.ssh_port
-    to_port     = var.ssh_port
+    description = "allow proxy to system"
+    from_port   = var.proxy_port
+    to_port     = var.proxy_port
     protocol    = "tcp"
     cidr_blocks = ["${local.ifconfig_co_json.ip}/32"]
     #  # alt option - hard coded local system

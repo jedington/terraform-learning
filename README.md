@@ -10,17 +10,18 @@
 
 # terraform-learning
 
-Installs:
-1. [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) (required//Terraform auth and commands)
-2. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) (required//AWS auth and commands)
-3. [Visual Studio Code](https://code.visualstudio.com/download) (optional//any decent editor will do, this also allows CLI use internally)
-4. [Consul](https://www.consul.io/docs/install) (required//for Deeper Dive section)
-5. [Create AWS Account](https://portal.aws.amazon.com/billing/signup) (required//in order to use AWS resources)
-
-Setup AWS CLI (after AWS CLI [addon] is installed--use commands in whatever CLI of choice:
-- [NOTE] See [CLI-configure-files](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) on how to setup AWS authentication.
-1. `aws configure set region` [your_region_name]
-2. `aws ec2 create-key-pair --key-name` [your_key_name]
+Pre-reqs:
+1. [Visual Studio Code](https://code.visualstudio.com/download) (optional//any decent editor will do, this also allows CLI use internally)
+2. [Create Terraform Account](https://learn.hashicorp.com/tutorials/terraform/cloud-sign-up?in=terraform/cloud-get-started).
+3. [Terraform CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli) (required//Terraform auth and commands)
+4. [Create AWS Account](https://portal.aws.amazon.com/billing/signup) (required//in order to use AWS resources)
+5. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) (required//AWS auth and commands)
+6. Setup AWS CLI (after AWS CLI [addon] is installed)--use commands in whatever CLI of choice:
+    - [NOTE] See [CLI-configure-files](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) on  how to setup AWS authentication.
+    1. `aws configure set region` [your_region_name]
+    2. `aws ec2 create-key-pair --key-name` [your_key_name]
+7. [Consul](https://www.consul.io/docs/install) (required//for Deeper Dive section)
+8. Clone repo to your local env: `git clone https://github.com/jedington/terraform-learning.git`
 
 Once Terraform/AWS/all of that stuff is installed/setup, start running through the folders. 
 Move to a working directory within the repo, via CLI of choice, and play around a bit.

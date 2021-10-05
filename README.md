@@ -21,7 +21,8 @@ Pre-reqs:
     1. `aws configure set region` [your_region_name]
     2. `aws ec2 create-key-pair --key-name` [your_key_name]
 7. [Consul](https://www.consul.io/docs/install) (required//for Deeper Dive section)
-8. Clone repo to your local env: `git clone https://github.com/jedington/terraform-learning.git`
+8. Clone repo to your local env: 
+    - [Run] `git clone https://github.com/jedington/terraform-learning.git ~/terraform-learning`
 
 Once Terraform/AWS/all of that stuff is installed/setup, start running through the folders. 
 Move to a working directory within the repo, via CLI of choice, and play around a bit.
@@ -59,8 +60,8 @@ Terraform (advanced) commands:
 
 [NOTE] Keep in mind that .tfvars files can contain sensitive data, such as passwords, private/secret keys, etc. The files provided in this repo are for **learning purposes only**. This should not be a practice done in live/production environments. Also, when making your own repos, make sure to uncomment/add `*.tfvars` in the .gitignore file.
 
-[Optional-Needs-Linux/MacOS-Env] Terraform Getting Started (Terraform basics and Terraform Cloud)
-- git clone https://github.com/hashicorp/tfc-getting-started.git
+[Optional-Linux/MacOS] Terraform Getting Started (Terraform basics and Terraform Cloud)
+  * `git clone https://github.com/hashicorp/tfc-getting-started.git ~/tfc-getting-started`
 
 ref 1 - https://github.com/ned1313/Getting-Started-Terraform For...
   * https://github.com/jedington/terraform-learning/tree/master/02-PluralSight-getting-started

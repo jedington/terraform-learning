@@ -1,7 +1,0 @@
-#First run
-terraform init
-terraform plan -out m3.tfplan
-terraform apply "m3.tfplan"
-
-terraform show
-terraform output

@@ -11,7 +11,7 @@ key_name = "terraform"
 
 # Local path to pem file for key pair. 
 # Windows paths need to use double-backslash: Ex. C:\\Users\\Ned\\Pluralsight.pem
-private_key_path = "C:\\Users\\%userprofile%\\.terraform\\terraform.pem"
+private_key_path = "~\\.terraform\\terraform.pem"
 
 # Prefix value to be used for S3 bucket. You can leave this value as-is
 bucket_name_prefix = "globo"
@@ -33,30 +33,6 @@ arm_password = "AZURE_SERVICE_PRINCIPAL_PASSWORD"
 
 tenant_id = "AZURE_SERVICE_PRINCIPAL_TENANT_ID"
 
-dns_zone_name = "yourdomain.com"
+dns_zone_name =  "yourzonename.com"
 
-dns_resource_group = "azure_resource_group_for_dns"
-
-network_address_space = {
-  Development = "10.0.0.0/16"
-  UAT = "10.1.0.0/16"
-  Production = "10.2.0.0/16"
-}
-
-instance_size = {
-  Development = "t2.micro"
-  UAT = "t2.small"
-  Production = "t2.medium"
-}
-
-subnet_count = {
-  Development = 2
-  UAT = 2
-  Production = 3
-}
-
-instance_count = {
-  Development = 2
-  UAT = 4
-  Production = 6
-}
+dns_resource_group = "AZURE_RESOURCE_GROUP_NAME_FOR_DNS_ZONE"

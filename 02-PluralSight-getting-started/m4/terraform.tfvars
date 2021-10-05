@@ -11,4 +11,4 @@ key_name = "terraform"
 
 # Local path to pem file for key pair. 
 # Windows paths need to use double-backslash: Ex. C:\\Users\\Ned\\Pluralsight.pem
-private_key_path = "C:\\Users\\%userprofile%\\.terraform\\terraform.pem"
+private_key_path = "~\\.terraform\\terraform.pem"

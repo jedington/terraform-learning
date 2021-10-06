@@ -1,11 +1,14 @@
+### LAUNCH INSTANCE ###
 resource "aws_instance" "Webserver" {
-  ami                    = var.ami
-  count                  = 3 # multiple webservers
-  instance_type          = var.instance_type
-  key_name               = "terraform"
-  vpc_security_group_ids = ["${aws_security_group.webserver_sg.id}"]
+  ami                     = var.ami["us-east-1"]
+  count                   = 3 # multiple webservers
+  instance_type           = var.instance_type
+  key_name                = "terraform"
+  #- security_groups      = ["${aws_security_group.webserver_sg.id}"]
+  vpc_security_group_ids  = ["${aws_security_group.webserver_sg.id}"]
   tags = {
-    Name = "Webserver-${count.index + 1}"
+    Name  = "Webserver-${count.index + 1}"
+    OS    = "Ubuntu"
   }
   user_data = <<EOF
   #!/bin/bash -xe

@@ -1,13 +1,14 @@
 ### JENKINS ###
 resource "aws_instance" "jenkins" {
-  ami                    = var.ami
-  instance_type          = var.instance_type
-  key_name               = "terraform"
-  iam_instance_profile   = "${aws_iam_instance_profile.ec2_profile.name}"
-  vpc_security_group_ids = [aws_security_group.allow_login.id]
+  ami                     = var.ami["us-east-1"]
+  instance_type           = var.instance_type
+  key_name                = "terraform"
+  #- security_groups      = ["${aws_security_group.webserver_sg.id}"]
+  vpc_security_group_ids  = ["${aws_security_group.webserver_sg.id}"]
+  iam_instance_profile    = "${aws_iam_instance_profile.ec2_profile.name}"
   tags = {
-    Name = var.project
-    OS = "ubuntu"
+    Name  = var.project
+    OS    = "Ubuntu"
   }
   user_data = <<EOC
   #!/bin/bash -xe

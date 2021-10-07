@@ -4,6 +4,7 @@ resource "aws_instance" "Webserver" {
   count                   = 3 # multiple webservers
   instance_type           = var.instance_type
   key_name                = "terraform"
+  #  `security_groups` is for EC2 Classic and Default VPCs only.
   #- security_groups      = ["${aws_security_group.webserver_sg.id}"]
   vpc_security_group_ids  = ["${aws_security_group.webserver_sg.id}"]
   tags = {

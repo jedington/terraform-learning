@@ -3,6 +3,7 @@ resource "aws_launch_configuration" "my_first_lc" {
   ami                     = var.ami["us-east-1"]
   instance_type           = var.instance_type
   key_name                = "terraform"
+  #  `security_groups` is for EC2 Classic and Default VPCs only.
   #- security_groups      = ["${aws_security_group.webserver_sg.id}"]
   vpc_security_group_ids  = ["${aws_security_group.webserver_sg.id}"]
   name                    = "Webserver-ELB"
@@ -22,9 +23,11 @@ resource "aws_launch_configuration" "my_first_lc" {
 
 ### ELASTIC LOAD BALANCER ###
 resource "aws_elb" "my_first_elb" {
-  name               = "terraform-elb"
-  availability_zones = var.avail_zones
-  security_groups    = ["${aws_security_group.webserver_sg.id}"]
+  name                    = "Terraform-ELB"
+  availability_zones      = var.avail_zones
+  #  `security_groups` is for EC2 Classic and Default VPCs only.
+  #- security_groups      = ["${aws_security_group.webserver_sg.id}"]
+  vpc_security_group_ids  = ["${aws_security_group.webserver_sg.id}"]
   listener {
     lb_port           = var.http_port
     lb_protocol       = "http"

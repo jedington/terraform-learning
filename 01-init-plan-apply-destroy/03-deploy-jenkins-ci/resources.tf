@@ -3,6 +3,7 @@ resource "aws_instance" "jenkins" {
   ami                     = var.ami["us-east-1"]
   instance_type           = var.instance_type
   key_name                = "terraform"
+  #  `security_groups` is for EC2 Classic and Default VPCs only.
   #- security_groups      = ["${aws_security_group.webserver_sg.id}"]
   vpc_security_group_ids  = ["${aws_security_group.webserver_sg.id}"]
   iam_instance_profile    = "${aws_iam_instance_profile.ec2_profile.name}"

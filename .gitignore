@@ -43,11 +43,16 @@ override.tf.json
 # Local History for Visual Studio Code
 .history/
 
+# Archives--Comment out if you want to include for a specific project
+*.7z
+*.gz
+*.tar
+*.tgz
+*.zip
+
 ### etc files ###
 *.log
 *.pem
-*.zip
-*.?z
 *.exe
 *.cab
 *.msi

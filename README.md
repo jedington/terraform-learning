@@ -10,7 +10,7 @@
 
 # terraform-learning
 
-Pre-reqs:
+## Pre-reqs
 1. [Visual Studio Code-Install](https://code.visualstudio.com/download) (Optional//any decent editor will do)
 2. [Git-Install](https://git-scm.com/downloads) (Required//should already have this anyways)
 3. [Terraform Account-Create](https://learn.hashicorp.com/tutorials/terraform/cloud-sign-up?in=terraform/cloud-get-started) (Optional//for Terraform Cloud/auth/remote backend option)
@@ -29,7 +29,7 @@ Once Terraform/AWS/all of that stuff is installed/setup, start running through t
 Move to a working directory within the repo, via CLI of choice, and play around a bit.
 **Make sure to destroy resources when done so you don't get charged $$$$$$!!** 
 
-Terraform (main) commands:
+## Terraform (main) commands
 1. `terraform init` ---- Terraform dependencies; prepares working directory for other commands.
     - `terraform validate` ---- Optional; check whether the configuration is valid.
 2. `terraform plan` ---- Show changes required by the current configuration.
@@ -40,7 +40,7 @@ Terraform (authentication) commands; see [this link](https://www.terraform.io/do
 - `terraform login` ---- Will need an account. Locally saves credentials from remote host.
 - `terraform logout` ---- Self-explanatory. Removes locally-stored credentials to remote host.
 
-Terraform (basic) commands:
+## Terraform (basic) commands
 - `terraform [command] -help` ---- Adding `-help` to any command will show some guidance.
 - `terraform version` ---- Shows current terraform version, duh.
 - `terraform fmt` ---- Formats .tf files to the Hashicorp 'lint' standard.
@@ -48,7 +48,7 @@ Terraform (basic) commands:
 - `terraform show` ---- Current state or saved plan (after `terraform plan` is used).
 - `terraform output` ---- Show output values from your root module.
 
-Terraform (advanced) commands:
+## Terraform (advanced) commands
 - `terraform import` ---- Associate existing infrastructure with a Terraform resource.
 - `terraform refresh` ---- Update the state to match remote systems.
 - `terraform taint` ---- Marks a resource as corrupted to be destroyed and then re-created.

@@ -61,15 +61,19 @@ Terraform (authentication) commands; see [this link](https://www.terraform.io/do
 
 [NOTE] Keep in mind that .tfvars files can contain sensitive data, such as passwords, private/secret keys, etc. The files provided in this repo are for **learning purposes only**. This should not be a practice done in live/production environments. Also, when making your own repos, make sure to uncomment/add `*.tfvars` in the .gitignore file.
 
-[Linux/MacOS] (Optional//Terraform fake/test config, and learning Terraform Cloud)
+## PluralSight Sources by [ned1313](https://github.com/ned1313)
+1. [PluralSight Getting Started Terraform](https://github.com/ned1313/Getting-Started-Terraform) For...
+  * This Repo's: [02-PluralSight-getting-started](https://github.com/jedington/terraform-learning/tree/master/02-PluralSight-getting-started)
+2. [PluralSight Deep Dive Terraform](https://github.com/ned1313/Deep-Dive-Terraform) For...
+  * This Repo's: [03-PluralSight-deeper-dive](https://github.com/jedington/terraform-learning/tree/master/03-PluralSight-deeper-dive)
+3. [PluralSight AWS Terraform](https://github.com/ned1313/Implementing-Terraform-on-AWS) For...
+  * This Repo's: [03-PluralSight-AWS-Cloud](https://github.com/jedington/terraform-learning/tree/master/04-PluralSight-AWS-Cloud)
+4. [PluralSight Azure Terraform](https://github.com/ned1313/Implementing-Terraform-on-Microsoft-Azure) For...
+  * This Repo's: [03-PluralSight-Azure-Cloud](https://github.com/jedington/terraform-learning/tree/master/05-PluralSight-Azure-Cloud)
+
+## Hashicorp Source (bonus)
+[Linux/MacOS] (Terraform fake/test config, and learning Terraform Cloud)
   * `git clone https://github.com/hashicorp/tfc-getting-started.git ~/tfc-getting-started`
-
-ref 1 - https://github.com/ned1313/Getting-Started-Terraform For...
-  * https://github.com/jedington/terraform-learning/tree/master/02-PluralSight-getting-started
-
-ref 2 - https://github.com/ned1313/Deep-Dive-Terraform For...
-  * https://github.com/jedington/terraform-learning/tree/master/03-PluralSight-deeper-dive
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

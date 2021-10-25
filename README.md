@@ -67,9 +67,9 @@ Terraform (authentication) commands; see [this link](https://www.terraform.io/do
 2. [PluralSight Deep Dive Terraform](https://github.com/ned1313/Deep-Dive-Terraform) For...
   * This Repo's: [03-PluralSight-deeper-dive](https://github.com/jedington/terraform-learning/tree/master/03-PluralSight-deeper-dive)
 3. [PluralSight AWS Terraform](https://github.com/ned1313/Implementing-Terraform-on-AWS) For...
-  * This Repo's: [03-PluralSight-AWS-Cloud](https://github.com/jedington/terraform-learning/tree/master/04-PluralSight-AWS-Cloud)
+  * This Repo's: [04-PluralSight-AWS-Cloud](https://github.com/jedington/terraform-learning/tree/master/04-PluralSight-AWS-Cloud)
 4. [PluralSight Azure Terraform](https://github.com/ned1313/Implementing-Terraform-on-Microsoft-Azure) For...
-  * This Repo's: [03-PluralSight-Azure-Cloud](https://github.com/jedington/terraform-learning/tree/master/05-PluralSight-Azure-Cloud)
+  * This Repo's: [05-PluralSight-Azure-Cloud](https://github.com/jedington/terraform-learning/tree/master/05-PluralSight-Azure-Cloud)
 
 ## Hashicorp Source (bonus)
 [Linux/MacOS] (Terraform fake/test config, and learning Terraform Cloud)

@@ -8,7 +8,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Twitter][twitter-shield]][twitter-url]
 
-# terraform-learning
+<img src="https://readme-typing-svg.herokuapp.com?lines=Terraform%20Learning&size=30" alt="Terraform Learning"/> 
 
 ## Pre-reqs
 1. [Visual Studio Code-Install](https://code.visualstudio.com/download) (Optional//any decent editor will do)

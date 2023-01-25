@@ -1,14 +1,12 @@
 <!-- PROJECT SHIELDS -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![Twitter][twitter-shield]][twitter-url]
 
-<img src="https://readme-typing-svg.herokuapp.com?lines=Terraform%20Learning&size=30" alt="Terraform Learning"/> 
+<img src="https://readme-typing-svg.herokuapp.com?lines=Terraform%20Learning&size=30" alt="Terraform Learning" /> 
 
 ## Pre-reqs
 1. [Visual Studio Code-Install](https://code.visualstudio.com/download) (Optional//any decent editor will do)
@@ -76,7 +74,6 @@ Terraform (authentication) commands; see [this link](https://www.terraform.io/do
   * `git clone https://github.com/hashicorp/tfc-getting-started.git ~/tfc-getting-started`
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/jedington/terraform-learning.svg?style=for-the-badge
 [contributors-url]: https://github.com/jedington/terraform-learning/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/jedington/terraform-learning.svg?style=for-the-badge
@@ -89,5 +86,3 @@ Terraform (authentication) commands; see [this link](https://www.terraform.io/do
 [license-url]: https://github.com/jedington/terraform-learning/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/julian-edington
-[twitter-shield]: https://img.shields.io/twitter/follow/arcanicvoid?style=for-the-badge&logo=twitter&colorB=555
-[twitter-url]: https://twitter.com/arcanicvoid
